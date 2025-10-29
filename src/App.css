@@ -1,0 +1,60 @@
+/* Limpieza básica y estilos de fuente */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Estilos para el contenedor principal de App.jsx */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App h1 {
+  color: #2c3e50;
+}
+
+/* Estilos para la Grilla (Grilla.jsx)
+  Usamos Flexbox para crear la grilla de tarjetas 
+*/
+.grilla-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin-top: 30px;
+}
+
+/* Estilos para la tarjeta individual (Usuario.jsx)
+  Esto cumple el requisito de "mejorar la visibilidad"
+*/
+.usuario-card {
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.usuario-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-card h3 {
+  margin-top: 0;
+  color: #3498db; /* Un color para el nombre */
+}
+
+.usuario-card p {
+  font-size: 1rem;
+  color: #555;
+}
