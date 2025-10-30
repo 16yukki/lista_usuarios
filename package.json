@@ -1,7 +1,7 @@
 {
   "name": "lista_usuarios",
   "private": true,
-  "homepage": "https://16yukki.github.io/lista_usuarios",
+  "homepage": "https://16yukki.github.io/lista_usuarios/main.jsx",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist" 
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.1",
